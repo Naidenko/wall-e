@@ -1,0 +1,34 @@
+@import "../variables.less";
+
+body {
+  background-color: @background-color;
+
+  color: @color-caption;
+  font-size: @font-size;
+  line-height: @line-height;
+  font-family: @font-family;
+  margin: 0;
+  min-width: 320px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active){
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+

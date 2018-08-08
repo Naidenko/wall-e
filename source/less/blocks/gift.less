@@ -1,0 +1,70 @@
+@import "../variables.less";
+
+.gift {
+  color: #ffffff;
+
+  background-color: #65a93c;
+  background-image: url("../../img/gift-photo-mobile.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  margin-bottom: 35px;
+}
+
+.gift__image {
+  display: block;
+  margin: 0 auto;
+  padding: 65px 0;
+}
+
+.gift__text {
+  .sm-caption;
+  text-align: center;
+  font-family: Arial,sans-serif;
+
+  padding-bottom: 45px;
+}
+
+@media (min-width: @tablet-width) {
+  .gift {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    background-position: 50% 65%;
+
+    height: 200px;
+
+
+    width: 92%;
+    margin: 0 auto;
+    margin-bottom: 75px;
+    max-width: 1220px;
+
+    background-image: url("../../img/gift-photo-tablet.jpg");
+  }
+
+  .gift__image {
+    margin: 0;
+  }
+
+  .gift__text {
+    padding: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+
+  .gift {
+    flex-direction: column;
+    justify-content: flex-start;
+
+    width: 20.5%;
+    height: 290px;
+
+    margin: 0;
+
+    background-image: url("../../img/gift-photo-desktop.jpg");
+  }
+}

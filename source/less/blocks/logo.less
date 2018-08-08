@@ -1,0 +1,153 @@
+@import "../variables.less";
+
+.logo {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  width: 88%;
+  max-width: 708px;
+  margin: 0 auto;
+
+  border-bottom: 1px solid #f7f7f7;
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+
+.logo__link {
+  &:hover {
+    opacity: 0.8;
+  }
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.logo__image {
+  width: 33px;
+  height: 38px;
+}
+
+.logo__name {
+  margin: 0 auto;
+}
+
+
+.logo__toggle {
+  position: relative;
+  top: 0;
+  right: 0;
+  z-index: 2;
+
+  display: block;
+  width: 24px;
+  height: 20px;
+
+  cursor: pointer;
+  border: none;
+  outline: none;
+
+  background-color: transparent;
+}
+
+.logo--closed .logo__toggle::before {
+  content: "";
+
+  position: absolute;
+  top: 2px;
+  right: 0;
+
+  width: 24px;
+  height: 2px;
+
+  background-color: #000000;
+  box-shadow: 0 6px 0 0 #000000, 0 12px 0 0 #000000;
+}
+
+.logo--closed .logo__toggle:active::before {
+  background-color: rgba(0, 0, 0, 0.3);
+  box-shadow: 0 6px 0 0 rgba(0, 0, 0, 0.3), 0 12px 0 0 rgba(0, 0, 0, 0.3);
+}
+
+.logo--opened .logo__toggle {
+  &::before,
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 8px;
+    right: 0;
+
+    width: 24px;
+    height: 2px;
+
+    background-color: #000000;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: rgba(0,0,0, 0.3);
+  }
+}
+
+
+@media (min-width: @tablet-width) {
+  .page-header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 92%;
+    max-width: 1220px;
+    margin: 0 auto;
+    padding-top: 25px;
+  }
+
+  .logo {
+    width: 192px;
+    margin: 0;
+
+    border: none;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .logo__image {
+    display: block;
+    width: 173px;
+    height: auto;
+  }
+
+  .logo__name {
+    display: none;
+  }
+
+  .logo__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header__wrapper {
+    width: 84%;
+    max-width: 1600px;
+
+    padding-top: 55px;
+  }
+
+  .logo {
+    width: 245px;
+  }
+
+  .logo__image {
+    width: 202px;
+  }
+}

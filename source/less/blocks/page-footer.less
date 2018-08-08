@@ -1,0 +1,159 @@
+@import "../variables.less";
+
+.page-footer {
+  text-align: center;
+
+  background-color: #f2f2f2;
+}
+
+.page-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  width: 88%;
+  margin: 0 auto;
+}
+
+.page-footer__logo {
+    border-bottom: 1px solid #eaeaea;
+}
+
+.page-footer__name {
+  &:hover {
+    opacity: 0.8;
+  }
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.page-footer__name {
+  padding-top: 39px;
+  padding-bottom: 31px;
+  margin: 0 auto;
+}
+
+.page-footer__social {
+  border-bottom: 1px solid #eaeaea;
+}
+
+.social__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  list-style: none;
+
+  width: 127px;
+  margin: 0 auto;
+  padding: 24px 0;
+}
+
+.social__item--vkontakte {
+  width: 22px;
+  height: 12px;
+}
+
+.social__item--instagram {
+  width: 16px;
+  height: 16px;
+
+}
+
+.social__item--facebook {
+  width: 10px;
+  height: 19px;
+}
+
+.social__icon {
+  fill: #7a7a7a;
+  &:hover {
+    fill: #a4d088;
+  }
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.page-footer__copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  font-weight: 500;
+}
+
+.copyright__link {
+  padding: 22px 0;
+
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 16px;
+  color: @color-page;
+}
+
+.html {
+  width: 30px;
+  height: 38px;
+
+  fill: #7a7a7a;
+
+  &:hover {
+    fill: #a4d088;
+  }
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer__wrapper{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 92%;
+    margin: 0 auto;
+    max-width: 1220px;
+  }
+
+  .page-footer__name {
+    width: 132px;
+    padding: 57px 0;
+    border: none;
+
+    text-align: left;
+  }
+
+  .social__list {
+    padding: 57px 0;
+    border: none;
+  }
+
+  .social__item--vkontakte {
+    width: 30px;
+    height: 16px;
+  }
+
+  .social__item--instagram {
+    width: 25px;
+    height: 25px;
+  }
+
+  .social__item--facebook {
+    width: 14px;
+    height: 28px;
+  }
+
+  .copyright__link  {
+    padding: 57px 0;
+    padding-right: 16px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer__wrapper {
+    width: 84%;
+    max-width: 1600px;
+  }
+}

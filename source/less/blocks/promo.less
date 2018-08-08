@@ -1,0 +1,25 @@
+@import "../variables.less";
+
+.promo {
+  width: 88%;
+  margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .promo {
+    width: 100%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .promo {
+    width: 84%;
+    max-width: 1600px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    padding-bottom: 85px;
+  }
+}
