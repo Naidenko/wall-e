@@ -13,6 +13,8 @@ var imagemin = require('gulp-imagemin');
 var webp = require('gulp-webp');
 var run = require('run-sequence');
 var del = require('del');
+var uglify = require('gulp-uglify');
+var concat = require('gulp-concat');
 
 gulp.task("style", function() {
     gulp.src("source/less/style.less")
@@ -26,6 +28,13 @@ gulp.task("style", function() {
         .pipe(rename("style.min.css"))
         .pipe(gulp.dest("build/css"))
 });
+
+gulp.task("default", function () {
+    gulp.src("source/js/*.js")
+        .pipe(uglify())
+        .pipe(gulp.dest("build/js"));
+});
+
 gulp.task("images", function() {
     return gulp.src("source/img/*.{png,jpg,svg}")
         .pipe(imagemin([
@@ -45,15 +54,16 @@ gulp.task("serve", function() {
     server.init({
         server: "build/"
     });
-    gulp.watch("source/less/**/*.less", ["style"]);
+    gulp.watch("source/less/**/*.less", ["style"]).on("change", server.reload);
+    gulp.watch("source/js/*.js", ["default"]).on("change", server.reload);
     gulp.watch("source/*.html", ["html"]).on("change", server.reload);
-
 
 });
 gulp.task("build", function(done) {
     run(
         "clean",
         "copy",
+        "default",
         "style",
         "html",
         done);
@@ -62,7 +72,7 @@ gulp.task("copy", function(){
     return gulp.src([
         "source/fonts/*.{woff,woff2}",
         "source/img/**",
-        "source/js/**",
+        "source/*.js",
         "source/css/normalize.css"
     ], {
         base: "source"

@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>CAT Energy</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <script src="js/modernizr.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 </head>
 <body>
     <svg style="display: none;">
@@ -117,34 +120,54 @@
                 </div>
                 <div class="example__change">
                     <div class="example__wrap">
-                        <picture>
-                            <source type="image/webp" media="(min-width: 1280px)" srcset="img/before-desktop.webp 1x, img/before-desktop@2x.webp 2x">
-                            <source type="image/webp" media="(min-width: 767px)" srcset="img/before-tablet.webp 1x, img/before-tablet@2x.webp 2x">
-                            <source type="image/webp" srcset="img/before-mobile.webp 1x, img/before-mobile@2x.webp 2x">
+                        <div class="example__compare-first">
+                            <div class="comparison-item comparison-item--first">
+                                <div class="comparison-item__content">
+                                   <picture>
+                                       <source type="image/webp" media="(min-width: 1280px)" srcset="img/before-desktop.webp 1x, img/before-desktop@2x.webp 2x">
+                                       <source type="image/webp" media="(min-width: 767px)" srcset="img/before-tablet.webp 1x, img/before-tablet@2x.webp 2x">
+                                       <source type="image/webp" srcset="img/before-mobile.webp 1x, img/before-mobile@2x.webp 2x">
 
-                            <source media="(min-width: 1280px)" srcset="img/before-desktop.png 1x, img/before-desktop@2x.png 2x">
-                            <source media="(min-width: 767px)" srcset="img/before-tablet.png 1x, img/before-tablet@2x.png 2x">
-                            <img class="example__change-cat" srcset="img/before-mobile.png, img/before-mobile@2x.png 2x">
-                        </picture>
-                        <span class="example__before">Было</span>
-                        <input class="example__range" type="range" min="0" max="50" step="1" value="25">
-                        <span class="example__now">Стало</span>
+                                       <source media="(min-width: 1280px)" srcset="img/before-desktop.png 1x, img/before-desktop@2x.png 2x">
+                                       <source media="(min-width: 767px)" srcset="img/before-tablet.png 1x, img/before-tablet@2x.png 2x">
+                                       <img class="example__change-cat" srcset="img/before-mobile.png, img/before-mobile@2x.png 2x">
+                                   </picture>
+                                </div>
+                            </div>
+                            <div class="comparison-item">
+                                <div class="comparison-item__content comparison-item__content--second">
+                                   <picture>
+                                       <source type="image/webp" media="(min-width: 1280px)" srcset="img/after-desktop.webp 1x, img/after-desktop@2x.webp 2x">
+                                       <source type="image/webp" media="(min-width: 767px)" srcset="img/after-tablet.webp 1x, img/after-tablet@2x.webp 2x">
+                                       <source type="image/webp" srcset="img/after-mobile.webp 1x, img/after-mobile@2x.webp 2x">
+
+                                       <source media="(min-width: 1280px)" srcset="img/after-desktop.png 1x, img/after-desktop@2x.png 2x">
+                                       <source media="(min-width: 767px)" srcset="img/after-tablet.png 1x, img/after-tablet@2x.png 2x">
+                                       <img class="example__cat-after" srcset="img/after-mobile.png, img/after-mobile@2x.png 2x">
+                                   </picture>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="example__compare-second">
+                            <span class="example__before">Дрыщ</span>
+                            <input class="example__range" style="padding: 0px 0px 0px 0px;" type="range" min="0" max="100" step="1" value="50">
+                            <span class="example__now">Жирный</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
         <section class="navigation--white">
-            <div class="navigation__wrap">
-                <div class="navigation__info">
-                    <h2 class="visually-hidden">Навигация</h2>
-                    <div class="navigation__contacts">
-                        <b class="navigation__title">Пришлашаем к сотрудничеству дилеров!</b>
-                        <span class="navigation__text">ул. Большая <br> Конюшенная, д. 19/8 <p>Санкт-Петербург</p></span>
+                <div class="navigation__wrap">
+                    <div class="navigation__info">
+                        <h2 class="visually-hidden">Навигация</h2>
+                        <div class="navigation__contacts">
+                            <b class="navigation__title">Пришлашаем к сотрудничеству дилеров!</b>
+                            <span class="navigation__text">ул. Большая <br> Конюшенная, д. 19/8 <p>Санкт-Петербург</p></span>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="navigation__map">
-                <img class="navigation__map-image">
+            <div class="navigation__map" id="map" style="width: 100%; height: 300px;">
             </div>
         </section>
     </main>
@@ -187,5 +210,11 @@
         </div>
     </footer>
     <script src="js/toggle.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script src="js/map.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/picturefill.min.js"></script>
+    <script src="js/svg4everybody.min.js"></script>
+    <script>svg4everybody();</script>
 </body>
 </html>

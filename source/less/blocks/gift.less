@@ -1,6 +1,18 @@
 @import "../variables.less";
 
-.gift {
+.webp .gift {
+  color: #ffffff;
+
+  background-color: #65a93c;
+  background-image: url("../../img/gift-photo-mobile.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  margin-bottom: 35px;
+}
+
+.no-webp .gift {
   color: #ffffff;
 
   background-color: #65a93c;
@@ -11,6 +23,7 @@
 
   margin-bottom: 35px;
 }
+
 
 .gift__image {
   display: block;
@@ -27,7 +40,25 @@
 }
 
 @media (min-width: @tablet-width) {
-  .gift {
+  .webp .gift {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    background-position: 50% 65%;
+
+    height: 200px;
+
+
+    width: 92%;
+    margin: 0 auto;
+    margin-bottom: 75px;
+    max-width: 1220px;
+
+    background-image: url("../../img/gift-photo-tablet.webp");
+  }
+
+  .no-webp .gift {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -55,8 +86,19 @@
 }
 
 @media (min-width: @desktop-width) {
+  .webp .gift {
+    flex-direction: column;
+    justify-content: flex-start;
 
-  .gift {
+    width: 20.5%;
+    height: 290px;
+
+    margin: 0;
+
+    background-image: url("../../img/gift-photo-desktop.webp");
+  }
+
+  .no-webp .gift {
     flex-direction: column;
     justify-content: flex-start;
 

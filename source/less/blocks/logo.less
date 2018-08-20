@@ -2,6 +2,7 @@
 
 .logo {
   position: relative;
+  z-index: 1;
 
   display: flex;
   align-items: center;
@@ -62,6 +63,8 @@
 
   background-color: #000000;
   box-shadow: 0 6px 0 0 #000000, 0 12px 0 0 #000000;
+
+  transition: all 250ms ease-in-out;
 }
 
 .logo--closed .logo__toggle:active::before {
@@ -82,6 +85,8 @@
     height: 2px;
 
     background-color: #000000;
+
+    transition: all 250ms ease-in-out;
   }
 
   &::before {

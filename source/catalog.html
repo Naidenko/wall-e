@@ -1,14 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>CAT Energy | Каталог</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <script src="js/modernizr.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 </head>
 <body>
+    <svg style="display: none;">
+        <svg xmlns="http://www.w3.org/2000/svg" id="basket" viewBox="0 0 1000 1000"><path d="M419.54 74.13c-10.15 2.11-19.92 7.28-26.25 14.18-7.66 8.24-208.23 322.41-210.92 330.65-6.9 19.92 2.49 41.76 22.22 52.49 19.92 10.92 43.49 8.05 58.81-6.9 9-8.81 209.58-321.45 213.22-332.56 4.98-14.56 1.34-29.12-10.54-42.34-11.67-13.03-29.68-19.16-46.54-15.52zm139.27.39c-11.11 2.68-17.43 6.51-25.67 15.9-11.11 12.64-14.75 27.4-9.77 41.57 3.64 11.11 204.21 323.75 213.22 332.56 15.33 15.13 39.27 17.82 59.2 6.71 18.01-10.15 27.58-31.04 22.61-49.62-2.3-8.62-203.06-324.52-212.45-334.29-10.16-10.73-31.81-16.66-47.14-12.83z"/><path d="M50.2 415.51c-21.46 4.21-38.31 24.52-40.04 48.66-2.3 29.12 20.88 56.32 48.27 56.51h9.58l46.74 178.73c26.05 99.62 48.85 182.56 51.34 187.93 9.19 18.39 30.08 33.33 52.11 37.55 14.18 2.68 549.42 2.68 563.6 0 22.03-4.21 42.91-19.16 52.11-37.55 2.49-5.37 25.29-88.5 51.34-188.12l46.74-178.54h9.58c27.39-.19 50.58-27.39 48.28-56.51-1.53-19.35-13.03-37.16-29.69-45.4-8.62-4.21-10.92-4.41-53.07-4.41h-44.06l-1.15 19.16c-1.92 28.54-9.77 45.98-29.12 63.41-28.74 25.86-68.77 31.03-104.6 13.6-19.16-9.2-29.31-20.88-53.83-61.3l-21.84-35.83H347.7l-20.88 33.91c-25.29 41.19-29.12 46.17-43.1 55.56-18.2 12.64-33.91 17.63-54.79 17.81-37.74.19-73.37-24.52-86.4-59.38-1.72-4.79-3.64-17.24-4.41-27.78l-1.15-19.16-39.27-.38c-21.64 0-42.91.57-47.5 1.53zm263.98 173.95c3.64 1.92 8.62 6.32 11.11 9.77l4.21 6.32V722.6c0 132.95.77 126.82-15.33 134.67-15.33 7.85-32.76 4.98-42.72-6.9l-5.17-6.32V603.63l4.21-5.36c2.3-2.87 6.71-6.89 9.96-8.81 7.87-4.79 24.72-4.79 33.73 0zm131.41 1.72c12.83 9 12.45 4.79 11.88 134.87-.57 113.98-.77 117.62-4.41 122.6-6.32 8.62-18.58 13.6-30.84 12.64-11.11-.96-17.82-4.6-24.52-13.79-4.02-5.17-4.02-7.09-4.02-124.33 0-113.98.19-119.35 3.64-124.52 6.13-9.01 15.71-13.03 29.88-12.26 9.2.38 14.18 1.53 18.39 4.79zm146.56-1.34c5.75 2.87 8.81 6.13 11.49 12.26 3.64 8.05 3.64 13.22 3.26 124.33-.57 113.6-.57 115.9-4.6 121.07-6.9 9.39-13.41 12.84-25.1 13.79-13.79.96-26.05-4.98-31.61-14.94-3.26-6.32-3.45-12.45-3.06-124.52l.57-117.81 4.21-5.94c8.82-12.27 29.51-16.1 44.84-8.24zm126.05-1.15c3.06 1.53 7.66 5.36 10.54 8.62l4.98 6.13v240.6l-5.17 6.32c-2.87 3.26-8.05 7.28-11.49 8.62-14.37 6.13-35.44.58-42.72-11.11-3.64-6.13-3.83-9.39-3.83-124.33V605.53l4.41-6.51c2.3-3.64 7.28-8.05 10.92-9.77 8.22-4.2 25.08-4.39 32.36-.56z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" id="vk" viewBox="3.007 11.628 30.004 15.761"><path d="M26.945 27.388c-.386 0-1.17-.082-2.075-.632-.642-.385-1.223-.968-1.784-1.532-.438-.44-1.171-1.177-1.447-1.177-.268.075-.481.921-.476 1.569.004.113-.001.774-.468 1.213-.425.4-1.088.485-1.216.498l-1.926.007c-.967 0-4.358-.218-7.429-3.021-3.674-3.358-6.835-9.798-6.968-10.07-.197-.462-.248-1.066.152-1.482.392-.413 1.081-.472 1.359-.479l4.083-.024.115.008c.091.014.567.095.957.349.388.247.59.651.626.73.01.021.649 1.432 1.475 2.684 1.312 1.99 1.896 2.455 2.103 2.562.188-.417.277-1.7.187-2.871.001-.493-.101-1.098-.252-1.278-.112-.134-.426-.253-.778-.294l-.722-.691c-.096-.658.635-1.226 1.149-1.446.737-.316 1.792-.382 3.147-.382l.71.005c1.235.012 1.622.081 2.149.191 1.702.361 1.64 1.729 1.567 3.312-.021.464-.046 1.001-.046 1.621 0 .151-.005.312-.011.479-.012.38-.032 1.038.093 1.304.219-.145.852-.665 2.072-2.483.783-1.165 1.4-2.539 1.517-2.803l.001-.001c.182-.43.608-.941 1.613-.946l4.274-.024c.012-.003.172-.016.377-.016.98 0 1.597.287 1.832.854.269.65.169 1.657-2.354 4.605-.37.432-.697.804-.982 1.127-.598.678-1.216 1.379-1.237 1.595.053.169.662.665 1.252 1.145 1.53 1.247 2.528 2.264 3.033 3.073.522.759.429 1.33.258 1.677-.424.864-1.638.973-1.877.985l-3.79.047a2.525 2.525 0 0 1-.263.012zm-5.307-4.84c.899 0 1.682.786 2.511 1.618.497.5 1.011 1.016 1.496 1.307.727.44 1.316.421 1.398.412l.103-.009 3.805-.047c.171-.012.411-.073.536-.136a1.167 1.167 0 0 0-.098-.167c-.449-.718-1.388-1.659-2.686-2.718-1.184-.963-1.801-1.465-1.865-2.244-.066-.805.493-1.439 1.607-2.703.28-.318.604-.685.967-1.109 1.559-1.821 1.957-2.64 2.058-2.956-.17-.029-.648-.021-.678-.018l-4.361.028c-.191.001-.249.035-.249.036-.176.414-.812 1.812-1.644 3.05-1.895 2.82-2.785 3.2-3.407 3.201-.204 0-.396-.05-.569-.148-1.003-.569-.963-1.834-.934-2.757.005-.149.01-.295.01-.431 0-.646.025-1.207.048-1.689.076-1.68.016-1.692-.379-1.776-.409-.086-.705-.147-1.856-.159l-.693-.005c-.624 0-1.343.014-1.906.098.092.074.18.157.259.251.588.704.604 1.951.601 2.194.13 1.646.061 3.796-1.018 4.313a1.365 1.365 0 0 1-.597.137c-.926 0-1.854-.885-3.425-3.267a22.863 22.863 0 0 1-1.587-2.887.47.47 0 0 0-.075-.094 1.133 1.133 0 0 0-.32-.116l-4.001.024c-.021.001-.045.002-.07.005.591 1.189 3.426 6.592 6.519 9.419 2.74 2.502 5.826 2.629 6.417 2.629l1.851-.003c.046-.01.218-.062.269-.1-.019.018-.01-.053-.01-.097-.003-.265.012-2.595 1.578-3.034.126-.034.259-.052.395-.052z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" id="insta" viewBox="-3 -3 23 23"><path d="M14.002-1.501C16.482-1.501 18.5.519 18.5 3v11c0 2.481-2.018 4.5-4.498 4.5H3.01A4.504 4.504 0 0 1-1.488 14V3C-1.488.519.53-1.5 3.01-1.5h10.992m0-1.5H3.01C-.29-3-2.987-.301-2.987 3v11.001C-2.987 17.299-.29 20 3.01 20h10.995C17.301 20 20 17.299 20 13.999V3c0-3.301-2.699-6-5.998-6z"/><path d="M8.506 4.078a4.434 4.434 0 0 1 4.429 4.428c0 2.44-1.989 4.43-4.429 4.43a4.434 4.434 0 0 1-4.428-4.43 4.431 4.431 0 0 1 4.428-4.428m0-1.5a5.929 5.929 0 0 0 0 11.855c3.274 0 5.926-2.653 5.926-5.927S11.78 2.578 8.506 2.578z"/><circle cx="14.646" cy="2.379" r="1.341"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" id="fb" viewBox="34.789 -4.709 13.518 27.75"><path d="M44.32 23.041h-6.816V10.137h-2.715V3.763h2.629c-.202-2.887.298-5 1.519-6.444 1.039-1.229 2.583-1.911 4.588-2.026l4.782-.001v6.15h-3.755c-.166.315-.251 1.093-.252 2.321h3.978v6.375H44.32v12.903zm-5.316-1.5h3.816V8.637h3.957V5.263h-3.953l-.016-.734c-.044-2.04.002-3.784 1.007-4.46l.19-.127h2.801v-3.15h-3.239c-1.557.091-2.711.581-3.485 1.496-1.041 1.231-1.41 3.298-1.099 6.144l.092.832h-2.786v3.375h2.715v12.902z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" id="html" viewBox="0 0 60 60"><path d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/></svg>
+    </svg>
     <header class="page-header">
         <div class="page-header__wrapper">
             <div class="logo logo--closed ">
@@ -87,8 +97,8 @@
                                 </table>
                             </div>
                         </div>
-                        <button class="production__order button" type="button"
-                                data-name="Cat Energy chicken 500"
+                        <button class="production__order button pr__order" type="button"
+                                data-name="Cat Energy курица 500 г"
                                 data-image="img/catalog-1-mobile.jpg"
                                 data-price="700"
                         >Заказать</button>
@@ -138,8 +148,8 @@
                                 </table>
                             </div>
                         </div>
-                        <button class="production__order button" type="button"
-                                data-name="Cat Energy chicken 1000"
+                        <button class="production__order button pr__order" type="button"
+                                data-name="Cat Energy курица 1000 г"
                                 data-image="img/catalog-2-mobile.jpg"
                                 data-price="1000"
                         >Заказать</button>
@@ -189,7 +199,11 @@
                                 </table>
                             </div>
                         </div>
-                        <button class="production__order button" type="button">Заказать</button>
+                        <button class="production__order button pr__order" type="button"
+                                data-name="Cat Energy рыба 500 г"
+                                data-image="img/catalog-3-mobile.jpg"
+                                data-price="700"
+                        >Заказать</button>
                     </div>
                 </li>
                 <li class="production__item">
@@ -236,7 +250,11 @@
                                 </table>
                             </div>
                         </div>
-                        <button class="production__order button" type="button">Заказать</button>
+                        <button class="production__order button pr__order" type="button"
+                                data-name="Cat Energy рыба 1000 г"
+                                data-image="img/catalog-4-mobile.jpg"
+                                data-price="1000"
+                        >Заказать</button>
                     </div>
                 </li>
                 <li class="production__item">
@@ -283,7 +301,11 @@
                                 </table>
                             </div>
                         </div>
-                        <button class="production__order button" type="button">Заказать</button>
+                        <button class="production__order button pr__order" type="button"
+                                data-name="Cat Energy гречка 500 г"
+                                data-image="img/catalog-5-mobile.jpg"
+                                data-price="400"
+                        >Заказать</button>
                     </div>
                 </li>
                 <li class="production__item">
@@ -330,7 +352,11 @@
                                 </table>
                             </div>
                         </div>
-                        <button class="production__order button" type="button">Заказать</button>
+                        <button class="production__order button pr__order" type="button"
+                                data-name="Cat Energy гречка 1000 г"
+                                data-image="img/catalog-6-mobile.jpg"
+                                data-price="700"
+                        >Заказать</button>
                     </div>
                 </li>
                 <li class="production__item">
@@ -377,7 +403,11 @@
                                 </table>
                             </div>
                         </div>
-                        <button class="production__order button" type="button">Заказать</button>
+                        <button class="production__order button pr__order" type="button"
+                                data-name="Cat Energy рис 500 г"
+                                data-image="img/catalog-7-mobile.jpg"
+                                data-price="500"
+                        >Заказать</button>
                     </div>
                 </li>
                 <li class="production__item add">
@@ -406,7 +436,11 @@
                                     </td>
                                 </tr>
                             </table>
-                            <button class="additional__order button" type="button">Заказать</button>
+                            <button class="additional__order button pr__order" type="button"
+                                    data-name="Сахарозаменитель"
+                                    data-image="img/sugar.png"
+                                    data-price="100"
+                            >Заказать</button>
                         </div>
                     </li>
                     <li class="additional__item">
@@ -422,7 +456,11 @@
                                     </td>
                                 </tr>
                             </table>
-                            <button class="additional__order button" type="button">Заказать</button>
+                            <button class="additional__order button pr__order" type="button"
+                                    data-name="Питьевая вода"
+                                    data-image="img/water.png"
+                                    data-price="50"
+                            >Заказать</button>
                         </div>
                     </li>
                     <li class="additional__item">
@@ -438,7 +476,11 @@
                                     </td>
                                 </tr>
                             </table>
-                            <button class="additional__order button" type="button">Заказать</button>
+                            <button class="additional__order button pr__order" type="button"
+                                    data-name="Молоко"
+                                    data-image="img/milk.png"
+                                    data-price="100"
+                            >Заказать</button>
                         </div>
                     </li>
                     <li class="additional__item">
@@ -454,7 +496,11 @@
                                     </td>
                                 </tr>
                             </table>
-                            <button class="additional__order button" type="button">Заказать</button>
+                            <button class="additional__order button pr__order" type="button"
+                                    data-name="Витамины"
+                                    data-image="img/vitamin.png"
+                                    data-price="300"
+                            >Заказать</button>
                         </div>
                     </li>
                 </ul>
@@ -474,8 +520,7 @@
                     </div>
                 </div>
             </div>
-            <div class="navigation__map">
-                <img class="navigation__map-image">
+            <div class="navigation__map" id="map" style="width: 100%; height: 300px;">
             </div>
         </section>
     </main>
@@ -486,44 +531,90 @@
             </section>
             <section class="page-footer__social">
                 <ul class="social__list">
-                    <li class="social__item social__item--vkontakte">
-                        <a class="social__link" href="#"><span class="visually-hidden">Мы в ВКонтакте</span></a>
+                    <li class="social__item">
+                        <a class="social__link" href="#"><span class="visually-hidden">Мы в ВКонтакте</span>
+                            <svg class="social__icon social__item--vkontakte " width="22" height="12">
+                                <use xlink:href="#vk"></use>
+                            </svg>
+                        </a>
                     </li>
-                    <li class="social__item social__item--instagram">
-                        <a class="social__link" href="#"><span class="visually-hidden">Мы в Инстаграме</span></a>
+                    <li class="social__item">
+                        <a class="social__link" href="#"><span class="visually-hidden">Мы в Инстаграме</span>
+                            <svg class="social__icon social__item--instagram" width="16" height="16">
+                                <use xlink:href="#insta"></use>
+                            </svg>
+                        </a>
                     </li>
-                    <li class="social__item social__item--facebook">
-                        <a class="social__link" href="#"><span class="visually-hidden">Мы в Фейсбуке</span></a>
+                    <li class="social__item">
+                        <a class="social__link" href="#"><span class="visually-hidden">Мы в Фейсбуке</span>
+                            <svg class="social__icon social__item--facebook" width="10" height="19">
+                                <use xlink:href="#fb"></use>
+                            </svg>
+                        </a>
                     </li>
                 </ul>
             </section>
             <div class="page-footer__copyright copyright">
                 <a class="copyright__link" href="#">HTML Academy</a>
-                <img src="img/htmlacademy.png" class="htmlacademy" width="27" height="35" alt="Cat Energy">
+                <svg class="html" width="30" height="38">
+                    <use xlink:href="#html"></use>
+                </svg>
             </div>
         </div>
     </footer>
-    <section class="modal modal-basket">
-        <button class="modal-close" type="button">Закрыть</button>
+    <section class="modal-basket">
+        <button class="modal-close close-basket" type="button">Закрыть</button>
         <h2 class="modal-basket__title">Корзина</h2>
         <table class="basket__table">
             <tr class="basket__item">
+                <td class="modal__item-close"></td>
                 <td class="basket__image-item">
                     <img src="img/catalog-1-mobile.jpg">
                 </td>
-                <td>Cat Energy chiken 500</td>
-                <td>1</td>
-                <td>700 руб.</td>
+                <td class="basket__item-title">Cat Energy chiken 500</td>
+                <td class="basket__item-quantity">
+                    <span>-</span>1<span>+</span></td>
+                <td class="basket__item-price">700 руб.</td>
             </tr>
         </table>
         <div class="basket__order">
             <p class="basket__price">Итого: 750 руб.</p>
-            <a class="button" href="#">Оформить заказ</a>
-            <a class="button clear" href="#">Очистить корзину</a>
+            <a class="button modal__button clear" href="#">Очистить корзину</a>
+            <a class="button modal__button order" href="#">Оформить заказ</a>
         </div>
     </section>
+    <section class="modal-form">
+        <button class="modal-close close-form" type="button">Закрыть</button>
+        <h2 class="modal-form__title">Оформить заказ</h2>
+        <form method="post" action="https://echo.htmlacademy.ru" class="order__form">
+            <div class="filters__stroke">
+                <label class="field-name" for="name-field">Имя:</label>
+                <input class="filters__input" type="text" name="nickname" id="name-field" placeholder="Алешка" required>
+            </div>
+            <div class="filters__stroke">
+                <label class="field-name" for="e-mail">E-mail:</label>
+                <input class="filters__input" type="email" name="email" id="e-mail" placeholder="v_naydenko@mail.ru" required>
+            </div>
+            <button class="button checkout" type="submit">Отправить заявку</button>
+        </form>
+    </section>
+    <section class="modal-checkout">
+        <button class="modal-close close-checkout" type="button">Закрыть</button>
+        <h2 class="modal__title">Спасибо за заказ!</h2>
+        <p class="modal__description">Мы свяжемся с вами в близжайшее время</p>
+        <img class="modal__image" src="img/cat.svg" width="200" height="100">
+    </section>
+    <section class="picture-basket">
+        <svg class="basket" width="100" height="100">
+            <use xlink:href="#basket"></use>
+        </svg>
+    </section>
     <script src="js/toggle.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script src="js/picturefill.min.js"></script>
+    <script src="js/map.js"></script>
     <script src="js/order.js"></script>
-    <script src="js/popup.js"></script>
+    <script src="js/svg4everybody.min.js"></script>
+    <script>svg4everybody();</script>
 </body>
 </html>
